@@ -23,7 +23,7 @@ Databases provide persistence to your data independent of your web app. They all
 
 Let's consider our use case. Our db will contain a table `feedback` with two columns: `name` and `text`. You can think of tables as glorified Excel sheets for now. Every row in that table will be an instance of a single feedback.
 
-Whenever a user fills the feedback form, we capture the name and text and store it in a new row in the feedback table in our database. Similarly, whenever the user visits the `show_feedbacks` page, we are going to retrieve all the feedbacks stored in the database and display it one by one.
+Whenever a user fills the feedback form, we capture the name and text and store it in a new row in the feedback table in our database. Similarly, whenever the user visits the `/show` page, we are going to retrieve all the feedbacks stored in the database and display it one by one.
 
 ## sql-alchemy
 The kind of database that I mentioned above is called SQL databases. In order to store, modify and retrieve data from these databases we use a language called SQL. We too can write SQL commands to communicate with our databases, but it can be cumbersome for the programmer to mix Python and SQL together. It can also be an error prone process. This is where `sql-alchemy` comes in. `sql-alchemy` is what is known as an object relational mapper (ORM). It acts as an interface between Python and an SQL database. Through sql-alchemy you can write Python code in terms of objects and classes that automatically get translated to database commands. Moreover, sql-alchemy also allows you change the underlying database system without having to change the Python code.
