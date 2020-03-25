@@ -3,7 +3,7 @@
 _This might be a bit harder to follow if you haven't been in the 5-6PM batch since the contents of this follow directly from what was discussed in those sessions_
 
 
-# Storing data
+# Talking with databases
 
 So far we looked at
 - basic client-server model
@@ -140,7 +140,8 @@ That's it. We now have a form that takes in feedback and stores the data. Also, 
 
 
 ## Conclusion
-If you are first-timer this is one of the heavier concepts that we've talked about so far. This is partly because we have learned a new concept called databases and also how to interact with them. If you haven't understood this, that's okay. It takes time to understand these concepts and how they interact. Go through the code. Read through [this chapter]([https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database)) on Flask mega tutorial. And most importantly
+If you are first-timer this is one of the heavier concepts that we've talked about so far. This is partly because we have learned a new concept called databases and also how to interact with them. If you haven't understood this, that's okay. It takes time to understand these concepts and how they interact. Go through the code. Read through [this chapter]
+(https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database) on Flask mega tutorial. And most importantly
 
 > Google is your best-est friend.
 
@@ -154,9 +155,16 @@ But on the off-chance that you actually understood, congratulations. You have ta
 ## Where to next ?
 - Practice, practice, practice (Do more projects with these concepts)
 - It's certainly a good idea to try out more complex databases and complex queries. This is where you'll spend a lot of time.
+  - Do projects with multiple tables and queries that require combining data from multiple tables.
 - Deployment (we'll hopefully cover Heroku in our sessions)
 - Learning how to structure large projects
 - ???? (what else people ?)
 
 
+## Resources
+- [Flask Mega Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+- [Flask Tutorial - Corey Schafer](https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
+- Will add more
+
 > Written with [StackEdit](https://stackedit.io/).
+
