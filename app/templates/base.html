@@ -15,6 +15,10 @@
             margin: auto;
             width: 60%;
         }
+        
+        .nav a {
+            text-decoration: none;
+        }
     </style>
     <!--  -->
 </head>
@@ -22,6 +26,11 @@
 <body>
     <div class="container">
         <h1>Learn from Home</h1>
+        <div class="nav">
+            <a href="/feedback">Give feedback</a> |
+            <a href="/show">View feedbacks</a>
+            <hr>
+        </div>
         {% block content %} {% endblock%}
     </div>
 </body>
