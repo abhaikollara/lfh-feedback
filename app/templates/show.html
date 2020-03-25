@@ -1,0 +1,12 @@
+{%extends "base.html"%} {% block content %}
+<div>
+    {%for fb in feedbacks%}
+    <p>
+        <b>{{fb.name}} says: </b>
+    </p>
+    <p>
+        {{fb.text}}
+    </p>
+    {%endfor%}
+</div>
+{%endblock%}
