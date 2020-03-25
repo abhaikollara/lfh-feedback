@@ -64,7 +64,7 @@ class Feedback(db.Model):
         return '<Feedback {}>'.format(self.name)   
 ```
 
-This is a new file we are going to create. Models are the python side equivalent of database tables. So, here we define our representation of `Feedback` table. The code is pretty self explanatory. The only additional thing here is the presence of an `id` column which is mandatory for any model. Also, google what the `__repr__` is for.
+This is a new file we are going to create. Models are the equivalent of database tables on the python side. So, here we define our representation of `Feedback` table. The code is pretty self explanatory. The only additional thing here is the presence of an `id` column which is mandatory for any model. Also, Google what the `__repr__` is for.
 
 Now that we've created a model. We need to "migrate" this into our database. Run the following commands in your command line
 ```python
@@ -72,6 +72,7 @@ flask db init
 flask db migrate -m "feedback table"
 flask db upgrade
 ```
+This will actually create the `feedback` table in our database.
 
 ### `routes.py`
 Phew, that's a lot of work and we haven't even gotten started with the real work. So far, we've establish the link between a database and created a table to contain the feedbacks. Now we get into the business of actually pushing data into the table.
@@ -114,7 +115,7 @@ def  show_feedbacks():
 
 As you can see, we use `Feedback.query.all()` to retrieve all the feedbacks that are stored in the table. This list is then passed into the template shown below which displays them one by one.
 
-> `query.all()` is probably the simplest database query (means search) I could imagine. We can certainly create more complex queries. You can query for all feedbacks from a certain person. You can query for all queries longer than 200 words etc. 
+> `query.all()` is probably the simplest database query (means search) I could imagine. We can certainly create more complex queries. You can query for feedbacks from a certain person. You can only query for feedbacks longer than 200 words etc. 
 This can get even more complex when you have databases with multiple tables (most dbs do). Why would you need to have multiple tables ? Let's say you have implemented login and logged in users now provide feedback. Additionally the users provide additional information about themselves like age, address and email. It doesn't make sense to store these information in the same table as feedback. Instead we create a different table for users with user data and then link the user column of the feedback table with user table. This is called a relationship. Complex web apps can have hundreds of tables and as many relationships between them.
 
 
